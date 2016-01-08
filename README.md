@@ -67,35 +67,36 @@ Now you should have all the dependencies to run the code.
 
 ## Example
 
-You can test the code after installation by running the run_script_supercurrent_test.sh from the terminal while being in the main directory of the code
-
-```
-bash Test/run_script_supercurrent_test.sh
-```
-
-The script will calculate the supercurrent for the SO term A = (0, 0, alpha sigma_x) with alpha=0.00, 1.00, 2.00 for the exchange fields from 0.00 to 80.00. The values of the rest of the parameters can be found in the scripts. You can then plot the obtained curves with the plot_script_supercurrent_test.sh by running
-
-```
-bash Test/plot_script_supercurrent_test.sh
-```
-
-in the terminal. The figure is by default stored in a Test/Figures subfolder.
-
-Note that the actual solving of the equations takes quite a long time even though the matsubara_sum parameter is set to 50 in the run script, meaning that the results aren't yet that accurate. For accurate results use the default value matsubara_sum=0 which adjusts the accuracy depending on the chosen temperature. Also the tolerance parameter is set to 10e-4 for faster results. I would recommend using tolerance=10e-6 in actual calculations.
-
-You can run similar tests for the density of states with first
+You can test the code after installation by running the run_script_dos_test.sh from the terminal while being in the main directory of the code
 
 ```
 bash Test/run_script_dos_test.sh
 ```
 
-and then
+The script will calculate the density of states for exchange fields h = 0.00, 8.00, 16.00, and 24.00 with the SO term A = (0.00, 0.00, 2.00, 0.00). The values of the rest of the parameters can be found in the scripts. You can then plot the obtained curves with the plot_script_dos_test.sh by running
 
 ```
 bash Test/plot_script_dos_test.sh
 ```
 
-This is much faster and the results are stored in a Test/DOS_figures subfolder.
+in the terminal. The figure is by default stored in a Test/DOS_figures subfolder.
+
+You can run similar test for the supercurrent with 
+
+```
+bash Test/run_script_supercurrent_test.sh
+```
+
+and then
+
+```
+bash Test/plot_script_supercurrent_test.sh
+```
+in the main directory of the code.
+
+The first script will calculate the supercurrent for the SO term A = (0, 0, alpha sigma_x, 0) with alpha=0.00, 1.00, 2.00 for the exchange fields from 0.00 to 80.00. The second script will plot the results and store the figure in the Test/Figures subfolder.
+
+Note that the actual solving of the equations takes quite a long time even though the matsubara_sum parameter is set to 50 in the run script, meaning that the results aren't yet that accurate. For accurate results use the default value matsubara_sum=0 which adjusts the accuracy depending on the chosen temperature. Also the tolerance parameter is set to 10e-4 for faster results. I would recommend using tolerance=10e-6 in actual calculations.
 
 ## Note
 
