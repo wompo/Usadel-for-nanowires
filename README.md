@@ -4,7 +4,7 @@ This code solves the Usadel equation in a superconductor-nanowire-superconductor
 
 The code is operated using run_script_supercurrent.sh for the supercurrent and run_script_dos.sh for the DOS and all the plotting is done by using the corresponding plot scripts. Explanations for available parameters are found in the scripts.
 
-Some results obtained with the code are presented in INSERT REFERENCE. See [On citations](##on-citations).
+Some results obtained with the code are presented in INSERT REFERENCE. See [On citations](#on-citations).
 
 ## Installation guide for the dependencies
 
