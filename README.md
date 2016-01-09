@@ -4,7 +4,7 @@ This code solves the Usadel equation in a superconductor-nanowire-superconductor
 
 The code is operated using run_script_supercurrent.sh for the supercurrent and run_script_dos.sh for the DOS and all the plotting is done by using the corresponding plot scripts. Explanations for available parameters are found in the scripts.
 
-Some results obtained with the code are presented in INSERT REFERENCE. 
+Some results obtained with the code are presented in INSERT REFERENCE. See [On citations](##On citations)
 
 ## Installation guide for the dependencies
 
@@ -97,6 +97,22 @@ in the main directory of the code.
 The first script will calculate the supercurrent for the SO term A = (0, 0, alpha sigma_x, 0) with alpha=0.00, 1.00, 2.00 for the exchange fields from 0.00 to 80.00. The second script will plot the results and store the figure in the Test/Figures subfolder.
 
 Note that the actual solving of the equations takes quite a long time even though the matsubara_sum parameter is set to 50 in the run script, meaning that the results aren't yet that accurate. For accurate results use the default value matsubara_sum=0 which adjusts the accuracy depending on the chosen temperature. Also the tolerance parameter is set to 10e-4 for faster results. I would recommend using tolerance=10e-6 in actual calculations.
+
+## On citations
+
+If you use this code in academic publications, I encourage you to cite it appropriately, for example in BibTeX format
+
+```
+@Article{
+    author = {J. Arjorant and T.T. Heikkilä}
+    title = {Intrinsic spin-orbit interaction in diffusive normal wire Josephson weak links: supercurrent and density of states},
+    journal = {Phys. Rev. B},
+    volume = {},
+    pages = {},
+    year = {2016},
+    note = {Code available at https://github.com/wompo/Usadel-for-nanowires/}
+}
+```
 
 ## Note
 
