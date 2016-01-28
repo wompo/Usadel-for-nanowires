@@ -4,7 +4,7 @@ This code solves the Usadel equation in a superconductor-nanowire-superconductor
 
 The code is operated using run_script_supercurrent.sh for the supercurrent and run_script_dos.sh for the DOS and all the plotting is done by using the corresponding plot scripts. Explanations for available parameters are found in the scripts.
 
-Some results obtained with the code are presented in INSERT REFERENCE. See [On citations](#on-citations).
+Some results obtained with the code are presented in Phys. Rev. B 93, 024522. See [On citations](#on-citations).
 
 ## Installation guide for the dependencies
 
@@ -109,8 +109,8 @@ If you use this code in academic publications, I encourage you to cite it approp
     author = {J. Arjoranta and T.T. Heikkilä}
     title = {Intrinsic spin-orbit interaction in diffusive normal wire Josephson weak links: supercurrent and density of states},
     journal = {Phys. Rev. B},
-    volume = {},
-    pages = {},
+    volume = {93},
+    pages = {024522},
     year = {2016},
     note = {Code available at https://github.com/wompo/Usadel-for-nanowires/}
 }
