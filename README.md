@@ -106,7 +106,7 @@ If you use this code in academic publications, I encourage you to cite it approp
 
 ```
 @Article{
-    author = {J. Arjoranta and T.T. Heikkilä}
+    author = {Juho Arjoranta and Tero T. Heikkilä}
     title = {Intrinsic spin-orbit interaction in diffusive normal wire Josephson weak links: supercurrent and density of states},
     journal = {Phys. Rev. B},
     volume = {93},
